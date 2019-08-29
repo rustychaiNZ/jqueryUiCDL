@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Gaming Questionaire</title>
+	<meta name="author" content="name">
+	<meta name="description" content="description here">
+	<meta name="keywords" content="keywords,here">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	</head>
+	<body>
+
+		<header>
+			<h1>Jquery UI: Gaming Questionaire</h1>
+		</header>
+
+		<div class="container">
+			
+			<div class="menuCon">
+				<h2>Hobbies Menu</h2>
+
+				<ul id="menu">
+					<li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+					<li><div>Books</div></li>
+					<li><div>Clothing</div></li>
+
+					<li><div>Electronics</div>
+						<ul>
+							<li><div>Programming</div></li>
+							<li><div>Video Games</div>
+								<ul>
+									<li><div>Story Driven</div></li>
+									<li><div>Sandbox</div></li>
+									<li><div>Multiplayer</div></li>
+								</ul></li>
+							<li><div>Graphic Design</div></li>
+						</ul>
+					</li>
+
+					<li><div>Movies</div></li>
+					<li><div>Music</div>
+					<ul>
+						<li><div>Rock</div>
+							<ul>
+								<li><div>Alternative</div></li>
+								<li><div>Classic</div></li>
+							</ul>
+						</li>
+						<li><div>Jazz</div>
+						<ul>
+							<li><div>Freejazz</div></li>
+							<li><div>Big Band</div></li>
+							<li><div>Modern</div></li>
+						</ul>
+						</li>
+						<li class="ui-state-disabled"><div>Pop (n/a)</div></li>
+					</ul>
+					</li>
+				<li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+				</ul>
+			</div>
+
+			<div class="autocompleteCon">
+				<h2>Favourite Game</h2>
+
+				<div class="ui-widget">
+					<label for="tags">Game Title: </label>
+					<input id="tags">
+				</div>
+
+			</div>
+
+			<div class="accordingCon">
+				<h2>Play Style</h2>
+
+				<div id="accordion">
+					<!-- Single Player playstyle -->
+					<h3>Single Player</h3>
+					<div>
+						<h4>How do you use items?</h4>
+						<ol id="selectableSp">
+							<li class="ui-widget-content">Conservative</li>
+							<li class="ui-widget-content">Liberal</li>
+							<li class="ui-widget-content">Save for boss fights</li>
+							<li class="ui-widget-content">Horde everything</li>
+						</ol>
+					</div>
+					<!-- Multiplayer playstyle -->
+					<h3>Multiplayer</h3>
+					<div>
+						<h4>Co Operation</h4>
+						<ol id="selectableMp">
+							<li class="ui-widget-content">Team Player</li>
+							<li class="ui-widget-content">Loan Wolf</li>
+							<li class="ui-widget-content">Guild member</li>
+						</ol>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="spinnerCon">
+				<h2>How Many Hours A Week do you spend Gaming?</h2>
+
+				<label for="spinner">Hours of video games played: </label>
+				<input id="spinner" name="spinner" value="0.0">
+			</div>
+
+			<div class="btnCon">
+				<h2>Submit Survey</h2>
+				<input type="submit" value="Submit">
+			</div>
+
+			<div class="progBarCon">
+				<h2>Progress Bar</h2>
+				<div id="progressbar"><div class="progress-label">Loading...</div></div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/script.js"></script>
+	
+	</body>
+</html>

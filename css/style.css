@@ -1,0 +1,115 @@
+.ui-menu {
+  width: 20%;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.accordingCon {
+  width: 50%;
+  min-width: 500px;
+  max-width: 800px;
+}
+
+#selectableSp .ui-selecting {
+  background: #FECA40;
+}
+
+#selectableSp .ui-selected {
+  background: #9c6000;
+  color: white;
+  font-weight: 800;
+}
+
+#selectableSp {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+#selectableSp li {
+  margin: 5px 0;
+  padding: 2px 10px;
+  font-size: 1.2em;
+  height: 30px;
+}
+
+#selectableSp:hover {
+  cursor: pointer;
+}
+
+#selectableMp .ui-selecting {
+  background: #FECA40;
+}
+
+#selectableMp .ui-selected {
+  background: #9c6000;
+  color: white;
+  font-weight: 800;
+}
+
+#selectableMp {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+#selectableMp li {
+  margin: 5px 0;
+  padding: 2px 10px;
+  font-size: 1.2em;
+  height: 30px;
+}
+
+#selectableMp:hover {
+  cursor: pointer;
+}
+
+.btnCon input {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px grey;
+}
+
+.btnCon input:hover {
+  background: red;
+  cursor: pointer;
+}
+
+#progressbar {
+  width: 80%;
+  margin: auto;
+}
+
+.ui-progressbar {
+  position: relative;
+}
+
+.progress-label {
+  position: absolute;
+  left: 50%;
+  top: 4px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, label {
+  font-family: Century Gothic;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: wheat;
+}
+
+/*# sourceMappingURL=style.css.map */
