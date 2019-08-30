@@ -34,18 +34,22 @@ $( function() {
 		numberFormat: "n"
 	});
 
-	// Submit button
+	// Submit button -------
+	// onclick function to activate progress bar
 	$("#subBtn").click(function(){
+		// When button is clicked, reveals progress bar
 		$("#progressbar").show();
 		$(function(){
+			// Where the progress bar starts
 			$("#progressbar").progressbar({
 				value: 0
 			});
 		});
 	});
 
-	// Progress Bar
-	// First attempt -------------------
+	// Progress Bar ---------------
+	// First attempt 
+
 	// var progressbar = $("#progressbar"), 
 	// progressLabel = $(".progress-label");
 
@@ -70,17 +74,20 @@ $( function() {
 	// }
 	// setTimeout(progress, 2000);
 
-	// Second attempt ------------------
+	// Second attempt
 	var pGress = setInterval(function(){
 		var pVal = $("#progressbar").progressbar("option", "value");
+		// Controls what variable the bar increases by
 		var pCnt = !isNaN(pVal) ? (pVal + 1 ) : 1;
+		// If the bar is still loading, show incrase in number
 		if (pCnt > 100) {
 			clearInterval(pGress);
-		} else {
+		} else { 
 			$("#progressbar").progressbar({
 				value:pCnt
 			});
 		}
+		// time takes for progress bar to load each chunk (miliseconds)
 	}, 100);
 
 });
